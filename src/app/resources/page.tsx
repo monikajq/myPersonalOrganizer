@@ -1,10 +1,13 @@
 import React from 'react';
 import './resources.css';
+import Link from 'next/link';
 
 export default function Resources() {
 	return (
 		<div id='MyResources' className='my-resources-container'>
 			<div className='sidebar'>
+				<Link href="/" className='link'>Main page</Link>
+				<Link href="/resources" className='link'>Resources</Link>
 			</div>
 
 			<div className='header'>
