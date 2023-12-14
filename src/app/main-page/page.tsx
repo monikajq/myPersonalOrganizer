@@ -1,7 +1,7 @@
 import React from 'react';
 import './main-page.css';
 
-export function MainPage() {
+export default function MainPage() {
 	return (
 		<div id='MainPage' className='main-page-container'>
 			<div className='sidebar'>
