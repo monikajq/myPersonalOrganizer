@@ -1,18 +1,13 @@
 import React from 'react';
-import Link from 'next/link';
 import './main-page.css';
+import { Sidebar } from '@/app/shared/sidebar/sidebar';
+import { Header } from '@/app/shared/header/header';
 
 export default function MainPage() {
 	return (
 		<section id='MainPage' className='main-page-container'>
-			<nav className='sidebar'>
-				<Link href="/" className='link'>Main page</Link>
-				<Link href="/resources" className='link'>Resources</Link>
-			</nav>
-
-			<div className='header'>
-				<h2>Welcome to your Personal Organizer!</h2>
-			</div>
+			<Sidebar />
+			<Header />
 
 			<div className='main-content'>
 			</div>
