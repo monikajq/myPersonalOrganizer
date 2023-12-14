@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import './my-tasks.css';
 import { Task, TaskPriority, TaskSize, TaskStatus } from '@/shared/model/task.model';
+import { AddTask } from '@/app/main-page/my-tasks/add-task/add-task';
 
 export function MyTasks() {
 	const [tasks, setTasks] = useState<Task[]>([]);
@@ -60,6 +61,8 @@ export function MyTasks() {
 					</tbody>
 				</table>
 			): (<span>No pending tasks</span>)}
+
+			<AddTask />
 		</section>
 	)
 }

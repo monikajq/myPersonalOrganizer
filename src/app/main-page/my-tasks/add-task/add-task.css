@@ -1,0 +1,40 @@
+h2 {
+    font-size: 1.5em;
+    margin: 2em 0;
+}
+
+select {
+    color: grey;
+}
+
+input {
+    color: grey;
+}
+
+.add-task-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 68px auto auto;
+}
+
+.add-task-form {
+    width: 300px;
+}
+
+.error-message {
+    color: red;
+}
+
+.add-task-btn {
+    background-color: #56bcfc;
+    border: 1px solid #56bcfc;
+    margin-top: 24px;
+    padding: 4px 8px;
+}
+
+.add-task-btn:hover {
+    background-color: #56bcfc;
+    border: 1px solid #56bcfc;
+    opacity: .7;
+}
