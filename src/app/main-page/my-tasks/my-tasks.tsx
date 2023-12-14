@@ -2,35 +2,43 @@
 
 import React, { useEffect, useState } from 'react';
 import './my-tasks.css';
-import { Task, TaskPriority, TaskSize, TaskStatus } from '@/shared/model/task.model';
+import { Task } from '@/shared/model/task.model';
 import { AddTask } from '@/app/main-page/my-tasks/add-task/add-task';
 
 export function MyTasks() {
 	const [tasks, setTasks] = useState<Task[]>([]);
 
-	const mockTasks: Task[] = [{
-		status: TaskStatus.TODO,
-		name: 'Task 1',
-		priority: TaskPriority.HIGH,
-		size: TaskSize.L,
-		details: 'Task 1 details'
-	}, {
-		status: TaskStatus.IN_PROGRESS,
-		name: 'Task 2',
-		priority: TaskPriority.MEDIUM,
-		size: TaskSize.M,
-		details: 'Task 2 details'
-	}, {
-		status: TaskStatus.DONE,
-		name: 'Task 3',
-		priority: TaskPriority.HIGH,
-		size: TaskSize.S,
-		details: 'Task 3 details'
-	}];
+	const onTaskCreated = (task: Task) => {
+		console.log('onTaskCreated');
+		setTasks([
+			...tasks,
+			task
+		]);
+	};
 
-	useEffect(() => {
-		setTasks(mockTasks);
-	}, []);
+	// const mockTasks: Task[] = [{
+	// 	status: TaskStatus.TODO,
+	// 	name: 'Task 1',
+	// 	priority: TaskPriority.HIGH,
+	// 	size: TaskSize.L,
+	// 	details: 'Task 1 details'
+	// }, {
+	// 	status: TaskStatus.IN_PROGRESS,
+	// 	name: 'Task 2',
+	// 	priority: TaskPriority.MEDIUM,
+	// 	size: TaskSize.M,
+	// 	details: 'Task 2 details'
+	// }, {
+	// 	status: TaskStatus.DONE,
+	// 	name: 'Task 3',
+	// 	priority: TaskPriority.HIGH,
+	// 	size: TaskSize.S,
+	// 	details: 'Task 3 details'
+	// }];
+	//
+	// useEffect(() => {
+	// 	setTasks(mockTasks);
+	// }, []);
 
 	return (
 		<section className='my-tasks-container'>
@@ -62,7 +70,7 @@ export function MyTasks() {
 				</table>
 			): (<span>No pending tasks</span>)}
 
-			<AddTask />
+			<AddTask onTaskCreated={onTaskCreated} />
 		</section>
 	)
 }
