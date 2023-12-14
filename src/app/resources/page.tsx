@@ -3,8 +3,8 @@ import './resources.css';
 
 export default function Resources() {
 	return (
-		<div>
+		<section>
 			Resources
-		</div>
+		</section>
 	)
 }

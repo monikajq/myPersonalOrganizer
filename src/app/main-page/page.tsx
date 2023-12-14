@@ -3,9 +3,9 @@ import './main-page.css';
 
 export default function MainPage() {
 	return (
-		<div id='MainPage' className='main-page-container'>
-			<div className='sidebar'>
-			</div>
+		<section id='MainPage' className='main-page-container'>
+			<nav className='sidebar'>
+			</nav>
 
 			<div className='header'>
 				<h2>Welcome to your Personal Organizer!</h2>
@@ -13,6 +13,6 @@ export default function MainPage() {
 
 			<div className='main-content'>
 			</div>
-		</div>
+		</section>
 	)
 }
