@@ -1,11 +1,35 @@
 'use client'
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './my-tasks.css';
-import { Task } from '@/shared/model/task.model';
+import { Task, TaskPriority, TaskSize, TaskStatus } from '@/shared/model/task.model';
 
 export function MyTasks() {
 	const [tasks, setTasks] = useState<Task[]>([]);
+
+	const mockTasks: Task[] = [{
+		status: TaskStatus.TODO,
+		name: 'Task 1',
+		priority: TaskPriority.HIGH,
+		size: TaskSize.L,
+		details: 'Task 1 details'
+	}, {
+		status: TaskStatus.IN_PROGRESS,
+		name: 'Task 2',
+		priority: TaskPriority.MEDIUM,
+		size: TaskSize.M,
+		details: 'Task 2 details'
+	}, {
+		status: TaskStatus.DONE,
+		name: 'Task 3',
+		priority: TaskPriority.HIGH,
+		size: TaskSize.S,
+		details: 'Task 3 details'
+	}];
+
+	useEffect(() => {
+		setTasks(mockTasks);
+	}, []);
 
 	return (
 		<section className='my-tasks-container'>
