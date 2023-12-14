@@ -1,4 +1,5 @@
 .my-resources-container {
+    height: 100%;
     display: grid;
     grid-template-columns: [col-1-start] 250px [col-w-start] auto [end];
     grid-template-rows: [row-1-start] 100px [row-2-start] auto [last-line];
