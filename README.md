@@ -2,20 +2,20 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Open in Stackblitz
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/monikajq/myPersonalOrganizer)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/monikajq/myPersonalOrganizer) - master branch
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/monikajq/myPersonalOrganizer/tree/starter-code) - starter-code branch
+
+If you want to checkout to any other branch, just replace the branch name at the end of the above URL (after `tree/`). E.g. if you want to checkout to `checkpoint-1` branch, go to https://stackblitz.com/github/monikajq/myPersonalOrganizer/tree/checkpoint-1
 
 ## Getting Started
 
 First, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
 # or
-pnpm dev
-# or
-bun dev
+yarn install && npx next dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
