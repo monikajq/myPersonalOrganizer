@@ -1,7 +1,9 @@
+import MainPage from '@/app/main-page/page';
+
 export default function Home() {
   return (
     <main>
-      Main page
+      <MainPage />
     </main>
   )
 }

@@ -1,0 +1,28 @@
+h2 {
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: 300;
+}
+
+td, th {
+    border-top: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #8c8b8b;
+}
+
+.my-tasks-container {
+    width: 80%;
+}
