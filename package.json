@@ -12,6 +12,7 @@
     "next": "^14.0.5-canary.13",
     "npm": "^10.2.5",
     "react": "^18",
+    "react-bootstrap": "^2.9.1",
     "react-dom": "^18"
   },
   "devDependencies": {
